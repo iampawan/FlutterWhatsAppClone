@@ -1,4 +1,4 @@
-# Flutter WhatsAppClone
+# WazUp
 
 Building a WhatsApp Clone in Flutter.
 
@@ -7,8 +7,6 @@ Building a WhatsApp Clone in Flutter.
 ### Screenshots
 
 <img src="ss1.png" height="300em" /> <img src="ss2.png" height="300em" />
-
-[Watch the video tutorial on YouTube](https://youtu.be/2Tyrofn6zPg)
 
 ### Created & Maintained By
 
