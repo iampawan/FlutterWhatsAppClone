@@ -9,7 +9,7 @@ class ChatModel {
 
 List<ChatModel> dummyData = [
   new ChatModel(
-      name: "Pawan Kumar",
+      name: "Roger Van Wyk",
       message: "Hey Flutter, You are so amazing !",
       time: "15:30",
       avatarUrl:
@@ -28,7 +28,7 @@ List<ChatModel> dummyData = [
           "http://www.usanetwork.com/sites/usanetwork/files/styles/629x720/public/suits_cast_harvey.jpg?itok=fpTOeeBb"),
   new ChatModel(
       name: "Rachel",
-      message: "I'm good!",
+      message: "WazUp!",
       time: "10:30",
       avatarUrl:
           "http://www.usanetwork.com/sites/usanetwork/files/styles/629x720/public/suits_cast_harvey.jpg?itok=fpTOeeBb"),
@@ -40,7 +40,7 @@ List<ChatModel> dummyData = [
           "http://www.usanetwork.com/sites/usanetwork/files/styles/629x720/public/suits_cast_harvey.jpg?itok=fpTOeeBb"),
   new ChatModel(
       name: "Joe West",
-      message: "Hey Flutter, You are so cool !",
+      message: "WazUp !",
       time: "15:30",
       avatarUrl:
           "http://www.usanetwork.com/sites/usanetwork/files/styles/629x720/public/suits_cast_harvey.jpg?itok=fpTOeeBb"),

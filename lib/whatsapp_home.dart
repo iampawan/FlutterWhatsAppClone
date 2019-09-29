@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutterwhatsapp/pages/call_screen.dart';
-import 'package:flutterwhatsapp/pages/camera_screen.dart';
-import 'package:flutterwhatsapp/pages/chat_screen.dart';
-import 'package:flutterwhatsapp/pages/status_screen.dart';
+import 'package:flutterWazUp/pages/call_screen.dart';
+import 'package:flutterWazUp/pages/camera_screen.dart';
+import 'package:flutterWazUp/pages/chat_screen.dart';
+import 'package:flutterWazUp/pages/status_screen.dart';
 
-class WhatsAppHome extends StatefulWidget {
+class WazUpHome extends StatefulWidget {
   var cameras;
-  WhatsAppHome(this.cameras);
+  WazUpHome(this.cameras);
 
   @override
-  _WhatsAppHomeState createState() => new _WhatsAppHomeState();
+  _WazUpHomeState createState() => new _WazUpHomeState();
 }
 
-class _WhatsAppHomeState extends State<WhatsAppHome>
+class _WazUpHomeState extends State<WazUpHome>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
 
@@ -27,7 +27,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("WhatsApp"),
+        title: new Text("WazUp"),
         elevation: 0.7,
         bottom: new TabBar(
           controller: _tabController,

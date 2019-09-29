@@ -1,4 +1,4 @@
-# Flutter WhatsAppClone
+# WazUp
 
 Building a WhatsApp Clone in Flutter.
 
@@ -11,9 +11,6 @@ Building a WhatsApp Clone in Flutter.
 ### Created & Maintained By
 
 [Roger Van Wyk](https://github.com/roger-devhub) 
-
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee:
->
 
 # License
 
