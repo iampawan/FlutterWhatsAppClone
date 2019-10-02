@@ -6,7 +6,9 @@ class StoryPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     final controller = StoryController();
     final List<StoryItem> storyItems = [
-      StoryItem.text("Hi", Colors.red),
+      StoryItem.text('''If you do not make time for your wellness,
+you will be forced to make time for your illness.
+#ReadThatAgain''', Colors.red),
       StoryItem.pageImage(NetworkImage(
           "https://images.unsplash.com/photo-1541233349642-6e425fe6190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80")),
       StoryItem.pageGif(

@@ -66,7 +66,7 @@ class StatusScreen extends StatelessWidget {
                     leading: CircleAvatar(
                       radius: 30,
                       backgroundImage: NetworkImage(
-                          "https://s3.amazonaws.com/wll-community-production/images/no-avatar.png"),
+                          "https://pbs.twimg.com/media/EClDvMXU4AAw_lt?format=jpg&name=medium"),
                     ),
                     title: Text(
                       "Pawan Kumar",
