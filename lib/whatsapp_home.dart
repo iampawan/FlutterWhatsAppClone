@@ -6,7 +6,8 @@ import 'package:flutterwhatsapp/pages/chat_screen.dart';
 import 'package:flutterwhatsapp/pages/status_screen.dart';
 
 class WhatsAppHome extends StatefulWidget {
-  WhatsAppHome();
+  final List<CameraDescription> cameras;
+  WhatsAppHome({this.cameras});
 
   @override
   _WhatsAppHomeState createState() => _WhatsAppHomeState();
@@ -15,18 +16,12 @@ class WhatsAppHome extends StatefulWidget {
 class _WhatsAppHomeState extends State<WhatsAppHome>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
-  List<CameraDescription> cameras;
 
   @override
   void initState() {
     super.initState();
-    getCameras();
-    _tabController = TabController(vsync: this, initialIndex: 1, length: 4);
-  }
 
-  getCameras() async {
-    cameras = await availableCameras();
-    setState(() {});
+    _tabController = TabController(vsync: this, initialIndex: 1, length: 4);
   }
 
   @override
@@ -60,7 +55,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       body: TabBarView(
         controller: _tabController,
         children: <Widget>[
-          CameraScreen(cameras),
+          CameraScreen(widget.cameras),
           ChatScreen(),
           StatusScreen(),
           CallsScreen(),
