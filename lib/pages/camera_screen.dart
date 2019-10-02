@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
 class CameraScreen extends StatefulWidget {
-  List<CameraDescription> cameras;
+  final List<CameraDescription> cameras;
 
   CameraScreen(this.cameras);
 
@@ -36,7 +36,7 @@ class CameraScreenState extends State<CameraScreen> {
 
   @override
   Widget build(BuildContext context) {
-    if (!controller.value.initialized) {
+    if (!controller.value.isInitialized) {
       return new Container();
     }
     return new AspectRatio(
