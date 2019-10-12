@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primaryColor: new Color(0xff075E54),
         accentColor: new Color(0xff25D366),
+        darkTheme: ThemeData.dark(),
       ),
       debugShowCheckedModeBanner: false,
       home: new WhatsAppHome(cameras:cameras),
