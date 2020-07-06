@@ -1,5 +1,5 @@
-# Flutter WhatsAppClone
-
+# Flutter 7ChatsApp
+/*
 Building a WhatsApp Clone in Flutter.
 
 ### Show some :heart: and star the repo to support the project
@@ -39,3 +39,4 @@ Building a WhatsApp Clone in Flutter.
 
 For help getting started with Flutter, view our online
 [documentation](https://flutter.io/).
+*/
