@@ -11,6 +11,7 @@ class ChatScreen extends StatefulWidget {
 class ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
+    int online = 0; //may be zero or 1 
     return new ListView.builder(
       itemCount: dummyData.length,
       itemBuilder: (context, i) => new Column(
@@ -31,9 +32,13 @@ class ChatScreenState extends State<ChatScreen> {
                       dummyData[i].name,
                       style: new TextStyle(fontWeight: FontWeight.bold),
                     ),
+                    online ? new Text(
+                      "Online",
+                      style: new TextStyle(color: Colors.grey, fontSize: 15.0),
+                    ) :
                     new Text(
                       dummyData[i].time,
-                      style: new TextStyle(color: Colors.grey, fontSize: 14.0),
+                      style: new TextStyle(color: Colors.grey, fontSize: 15.0),
                     ),
                   ],
                 ),
@@ -41,7 +46,7 @@ class ChatScreenState extends State<ChatScreen> {
                   padding: const EdgeInsets.only(top: 5.0),
                   child: new Text(
                     dummyData[i].message,
-                    style: new TextStyle(color: Colors.grey, fontSize: 15.0),
+                    style: new TextStyle(color: Colors.grey, fontSize: 16.0),
                   ),
                 ),
               )
