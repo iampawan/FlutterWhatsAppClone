@@ -16,7 +16,7 @@ class ChatScreenState extends State<ChatScreen> {
       itemBuilder: (context, i) => new Column(
             children: <Widget>[
               new Divider(
-                height: 10.0,
+                height: i != 0 ? 10.0:0.0,
               ),
               new ListTile(
                 leading: new CircleAvatar(
