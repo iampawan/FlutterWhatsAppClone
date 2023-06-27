@@ -13,7 +13,7 @@ class CameraScreen extends StatefulWidget {
 }
 
 class CameraScreenState extends State<CameraScreen> {
-  CameraController controller;
+  late CameraController controller;
 
   @override
   void initState() {
